@@ -5,7 +5,13 @@ $db = (new Database())->getConnection();
 $stmt = $db->query("SELECT * FROM produits");
 $produits = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nom de la page</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
 <h2>Boutique</h2>
 <div class="catalogue">
   <?php foreach ($produits as $produit): ?>

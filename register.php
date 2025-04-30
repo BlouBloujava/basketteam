@@ -28,6 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 }
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nom de la page</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
 
 <form method="POST">
   <h2>Inscription</h2>

@@ -19,6 +19,13 @@ if (!$produit) {
 <p><?= htmlspecialchars($produit['description']) ?></p>
 <p><strong><?= $produit['prix'] ?> €</strong></p>
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nom de la page</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
 <form method="POST" action="acheter.php">
   <input type="hidden" name="id" value="<?= $produit['id'] ?>">
   <button type="submit">Acheter</button>

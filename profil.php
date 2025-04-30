@@ -18,6 +18,13 @@ $stmt->bindParam(':id', $user->id);
 $stmt->execute();
 $data = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nom de la page</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
 
 <h2>Mon Profil</h2>
 <p><strong>Nom :</strong> <?= htmlspecialchars($data['nom']) ?></p>
