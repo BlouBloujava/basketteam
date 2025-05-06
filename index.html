@@ -79,6 +79,24 @@
     </section>
     <section id="#Contact">
       <h2>Formulaire de Contact</h2>
+        <form action="#" method="post">
+          <label for="name">Nom :</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email :</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="motif">Motif de contact :</label><br>
+          <select id="motif" name="motif" required>
+            <option value="rejoindre">Rejoindre l’équipe</option>
+            <option value="autre">Autre demande</option>
+          </select><br><br>
+
+          <label for="message">Message :</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+          <button type="submit">Envoyer</button>
+        </form>
     </section>
   </main>
 
